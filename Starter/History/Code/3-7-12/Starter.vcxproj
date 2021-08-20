@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3D66A90-1107-4905-958E-CDFD093D9AEB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Starter</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(QTDIR)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(QTDIR)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(QTDIR)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(QTDIR)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>C:\OpenGL\glm-0.9.3.1</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;freeglut.lib;FreeImage.lib;FreeImaged.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>C:\OpenGL\glm-0.9.3.1</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;freeglut.lib;FreeImage.lib;FreeImaged.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicTriangle.cpp" />
+    <ClCompile Include="BumpMap.cpp" />
+    <ClCompile Include="CartoonShade.cpp" />
+    <ClCompile Include="EnvironmentMap.cpp" />
+    <ClCompile Include="FuzzyCircle.cpp" />
+    <ClCompile Include="GLSLProgram.cpp" />
+    <ClCompile Include="Lighting3D.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ShaderUtil.cpp" />
+    <ClCompile Include="skybox.cpp" />
+    <ClCompile Include="TextureCube.cpp" />
+    <ClCompile Include="vbomesh.cpp" />
+    <ClCompile Include="vboplane.cpp" />
+    <ClCompile Include="vboteapot.cpp" />
+    <ClCompile Include="vbotorus.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\basic_uniform.frag" />
+    <None Include="Shaders\basic_uniform.vert" />
+    <None Include="Shaders\basic_uniformblock.frag" />
+    <None Include="Shaders\basic_uniformblock.vert" />
+    <None Include="Shaders\bump_map.frag" />
+    <None Include="Shaders\bump_map.vert" />
+    <None Include="Shaders\cartoon_shade.frag" />
+    <None Include="Shaders\cartoon_shade.vert" />
+    <None Include="Shaders\environment_map.frag" />
+    <None Include="Shaders\environment_map.vert" />
+    <None Include="Shaders\lighting3d.frag" />
+    <None Include="Shaders\lighting3d.vert" />
+    <None Include="Shaders\texture_cube.frag" />
+    <None Include="Shaders\texture_cube.vert" />
+    <None Include="Textures\brick1.jpg" />
+    <None Include="Textures\cement.jpg" />
+    <None Include="Textures\flower.png" />
+    <None Include="Textures\moss.png" />
+    <None Include="Textures\ogre_diffuse.png" />
+    <None Include="Textures\ogre_normalmap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicTriangle.h" />
+    <ClInclude Include="BumpMap.h" />
+    <ClInclude Include="CartoonShade.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="drawable.h" />
+    <ClInclude Include="EnvironmentMap.h" />
+    <ClInclude Include="FuzzyCircle.h" />
+    <ClInclude Include="GLSLProgram.h" />
+    <ClInclude Include="KScene.h" />
+    <ClInclude Include="Lighting3D.h" />
+    <ClInclude Include="ShaderUtil.h" />
+    <ClInclude Include="skybox.h" />
+    <ClInclude Include="teapotdata.h" />
+    <ClInclude Include="TextureCube.h" />
+    <ClInclude Include="vbomesh.h" />
+    <ClInclude Include="vboplane.h" />
+    <ClInclude Include="vboteapot.h" />
+    <ClInclude Include="vbotorus.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

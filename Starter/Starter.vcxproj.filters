@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{1db4d675-d2cc-4593-abe4-a884aeb6c16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\BasicTriangle">
+      <UniqueIdentifier>{3477183b-2b3e-444c-9502-a76380bbe4cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\FuzzyCircle">
+      <UniqueIdentifier>{5cf111b0-fabd-4552-8e8d-7f8cad0964c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Lighting3D">
+      <UniqueIdentifier>{4ca12b3b-3ec8-4a04-add8-07073b7e510d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawable">
+      <UniqueIdentifier>{027981e2-0d55-4b7c-85c9-49cf3e70a2ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{3df4e4f6-9d56-4ae7-961d-dee89b78851d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\CartoonShade">
+      <UniqueIdentifier>{aa138493-40e1-401b-ae31-0d6c9af6bb3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\TextureCube">
+      <UniqueIdentifier>{de3665f0-2d68-4e75-812b-35d3552fefed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{8a690f70-2745-4c6a-b243-85b72ad4f261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\BumpMap">
+      <UniqueIdentifier>{0476d737-3835-438f-b5f0-1dabfce3d70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\EnvironmentMap">
+      <UniqueIdentifier>{c5ec9c8d-6f39-41e9-b36f-9a39d64f48b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\ProjectiveTexture">
+      <UniqueIdentifier>{96abbe21-1cc7-42a9-b635-5c1a37e39e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\PointSprites">
+      <UniqueIdentifier>{0ad7f319-6dfc-4e6b-92b1-584bae277909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\WireFrame">
+      <UniqueIdentifier>{1700edd2-867d-478d-a2ef-b6d3d62d2f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Tessellation">
+      <UniqueIdentifier>{37672d5c-3131-440c-bee6-dd919a04df2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\ShadowMap">
+      <UniqueIdentifier>{4575dd0d-4618-4e8c-8c88-ab6cf60062e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\AnimatingSurface">
+      <UniqueIdentifier>{0a00298f-d09f-49e8-a7de-d13d38196550}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vboteapot.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderUtil.cpp" />
+    <ClCompile Include="GLSLProgram.cpp" />
+    <ClCompile Include="vboplane.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicTriangle.cpp">
+      <Filter>Scenes\BasicTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="CartoonShade.cpp">
+      <Filter>Scenes\CartoonShade</Filter>
+    </ClCompile>
+    <ClCompile Include="FuzzyCircle.cpp">
+      <Filter>Scenes\FuzzyCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting3D.cpp">
+      <Filter>Scenes\Lighting3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureCube.cpp">
+      <Filter>Scenes\TextureCube</Filter>
+    </ClCompile>
+    <ClCompile Include="BumpMap.cpp">
+      <Filter>Scenes\BumpMap</Filter>
+    </ClCompile>
+    <ClCompile Include="vbomesh.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvironmentMap.cpp">
+      <Filter>Scenes\EnvironmentMap</Filter>
+    </ClCompile>
+    <ClCompile Include="skybox.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="vbotorus.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectiveTexture.cpp">
+      <Filter>Scenes\ProjectiveTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="PointSprites.cpp">
+      <Filter>Scenes\PointSprites</Filter>
+    </ClCompile>
+    <ClCompile Include="WireFrame.cpp">
+      <Filter>Scenes\WireFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Tessellation.cpp">
+      <Filter>Scenes\Tessellation</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowMap.cpp">
+      <Filter>Scenes\ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="PerspectiveProjection.cpp" />
+    <ClCompile Include="vboteapotpatch.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatingSurface.cpp">
+      <Filter>Scenes\AnimatingSurface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\basic_uniform.frag">
+      <Filter>Scenes\BasicTriangle</Filter>
+    </None>
+    <None Include="Shaders\basic_uniform.vert">
+      <Filter>Scenes\BasicTriangle</Filter>
+    </None>
+    <None Include="Shaders\basic_uniformblock.frag">
+      <Filter>Scenes\FuzzyCircle</Filter>
+    </None>
+    <None Include="Shaders\basic_uniformblock.vert">
+      <Filter>Scenes\FuzzyCircle</Filter>
+    </None>
+    <None Include="Shaders\lighting3d.frag">
+      <Filter>Scenes\Lighting3D</Filter>
+    </None>
+    <None Include="Shaders\lighting3d.vert">
+      <Filter>Scenes\Lighting3D</Filter>
+    </None>
+    <None Include="Shaders\cartoon_shade.frag">
+      <Filter>Scenes\CartoonShade</Filter>
+    </None>
+    <None Include="Shaders\cartoon_shade.vert">
+      <Filter>Scenes\CartoonShade</Filter>
+    </None>
+    <None Include="Shaders\texture_cube.frag">
+      <Filter>Scenes\TextureCube</Filter>
+    </None>
+    <None Include="Shaders\texture_cube.vert">
+      <Filter>Scenes\TextureCube</Filter>
+    </None>
+    <None Include="Textures\brick1.jpg">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\cement.jpg">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\flower.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\moss.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\ogre_diffuse.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\ogre_normalmap.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Shaders\bump_map.frag">
+      <Filter>Scenes\BumpMap</Filter>
+    </None>
+    <None Include="Shaders\bump_map.vert">
+      <Filter>Scenes\BumpMap</Filter>
+    </None>
+    <None Include="Shaders\environment_map.frag">
+      <Filter>Scenes\EnvironmentMap</Filter>
+    </None>
+    <None Include="Shaders\environment_map.vert">
+      <Filter>Scenes\EnvironmentMap</Filter>
+    </None>
+    <None Include="Shaders\projective_texture.frag">
+      <Filter>Scenes\ProjectiveTexture</Filter>
+    </None>
+    <None Include="Shaders\projective_texture.vert">
+      <Filter>Scenes\ProjectiveTexture</Filter>
+    </None>
+    <None Include="Shaders\point_sprite.frag">
+      <Filter>Scenes\PointSprites</Filter>
+    </None>
+    <None Include="Shaders\point_sprite.geom">
+      <Filter>Scenes\PointSprites</Filter>
+    </None>
+    <None Include="Shaders\point_sprite.vert">
+      <Filter>Scenes\PointSprites</Filter>
+    </None>
+    <None Include="Shaders\wire_frame.frag">
+      <Filter>Scenes\WireFrame</Filter>
+    </None>
+    <None Include="Shaders\wire_frame.geom">
+      <Filter>Scenes\WireFrame</Filter>
+    </None>
+    <None Include="Shaders\wire_frame.vert">
+      <Filter>Scenes\WireFrame</Filter>
+    </None>
+    <None Include="Shaders\tessellation.tcs">
+      <Filter>Scenes\Tessellation</Filter>
+    </None>
+    <None Include="Shaders\tessellation.tes">
+      <Filter>Scenes\Tessellation</Filter>
+    </None>
+    <None Include="Shaders\tessellation.geom">
+      <Filter>Scenes\Tessellation</Filter>
+    </None>
+    <None Include="Shaders\tessellation.vert">
+      <Filter>Scenes\Tessellation</Filter>
+    </None>
+    <None Include="Shaders\tessellation.frag">
+      <Filter>Scenes\Tessellation</Filter>
+    </None>
+    <None Include="Shaders\shadow_map.frag">
+      <Filter>Scenes\ShadowMap</Filter>
+    </None>
+    <None Include="Shaders\shadow_map.vert">
+      <Filter>Scenes\ShadowMap</Filter>
+    </None>
+    <None Include="Shaders\animating_surface.frag">
+      <Filter>Scenes\AnimatingSurface</Filter>
+    </None>
+    <None Include="Shaders\animating_surface.vert">
+      <Filter>Scenes\AnimatingSurface</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="drawable.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="vboteapot.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="teapotdata.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderUtil.h" />
+    <ClInclude Include="GLSLProgram.h" />
+    <ClInclude Include="vboplane.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicTriangle.h">
+      <Filter>Scenes\BasicTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="CartoonShade.h">
+      <Filter>Scenes\CartoonShade</Filter>
+    </ClInclude>
+    <ClInclude Include="FuzzyCircle.h">
+      <Filter>Scenes\FuzzyCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting3D.h">
+      <Filter>Scenes\Lighting3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureCube.h">
+      <Filter>Scenes\TextureCube</Filter>
+    </ClInclude>
+    <ClInclude Include="BumpMap.h">
+      <Filter>Scenes\BumpMap</Filter>
+    </ClInclude>
+    <ClInclude Include="KScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="vbomesh.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentMap.h">
+      <Filter>Scenes\EnvironmentMap</Filter>
+    </ClInclude>
+    <ClInclude Include="skybox.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="vbotorus.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectiveTexture.h">
+      <Filter>Scenes\ProjectiveTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="PointSprites.h">
+      <Filter>Scenes\PointSprites</Filter>
+    </ClInclude>
+    <ClInclude Include="WireFrame.h">
+      <Filter>Scenes\WireFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Tessellation.h">
+      <Filter>Scenes\Tessellation</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowMap.h">
+      <Filter>Scenes\ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="PerspectiveProjection.h" />
+    <ClInclude Include="vboteapotpatch.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatingSurface.h">
+      <Filter>Scenes\AnimatingSurface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

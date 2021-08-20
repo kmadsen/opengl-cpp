@@ -1,0 +1,24 @@
+#pragma once
+
+#include <gl\glew.h>
+
+#include <vector>
+
+#include <FreeImage.h>
+
+class ShaderUtil
+{
+public:
+	ShaderUtil(void);
+	~ShaderUtil(void);
+
+	static bool LoadShaderFromString(char* fileName, std::vector<GLchar> &shaderCode);
+	static bool CheckShaderCompile(GLuint shader);
+	static GLuint CompileShader(char* fileName, GLuint shaderType);
+
+	static void PrintAttributes(GLuint programHandle);
+	static void PrintActiveUniformVars(GLuint programHandle);
+
+	static FIBITMAP* GetBitMap(char const * const filename);
+};
+
